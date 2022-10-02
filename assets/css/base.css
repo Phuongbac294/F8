@@ -32,10 +32,29 @@ html {
 .grid__full-width {
     width: 100%;
 }
+
 .grid__row {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    margin-left: -12px;
+    margin-right: -12px;
 }
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+.grid__column-10 {
+    width: 83.3334%;
+}
+
 /* Annimation */
 @keyframes fadeIn { /* tạo chuyển động*/
    from {               /* bắt dầu từ đầu*/
@@ -48,21 +67,22 @@ html {
 
 .btn {
     height: 34px;
-    min-width: 142px;
+    min-width: 124px;
     border: none;
     border-radius: 2px;
     font-size: 1.5rem;
     padding: 0;
     outline: none;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white-color);
 }
 .btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
-.btn.btn--ptimary { /* việt liên nhau để CSS cho element có cả 2 class mới dc*/
+.btn.btn--primary { /* việt liên nhau để CSS cho element có cả 2 class mới dc*/
     color: var(--white-color);
     background-color: var(--primary-color);
 }
