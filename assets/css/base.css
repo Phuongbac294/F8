@@ -45,15 +45,17 @@ html {
     padding-right: 12px;
     width: 16.667%;
 }
+.grid__column-10 {
+    width: 83.334%;
+}
 
 .grid__column-2-4 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
     width: 20%;
+    box-sizing: border-box;
 }
-.grid__column-10 {
-    width: 83.3334%;
-}
+
 
 /* Annimation */
 @keyframes fadeIn { /* tạo chuyển động*/
